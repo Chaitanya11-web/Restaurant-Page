@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+td {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ccc;
+    color: white;
+    font-size: 1.2em;
+}
+
+.buffet {
+    background-color: #ffeb3b; 
+}
+
+.lunch {
+    background-color: #4caf50; 
+}
+
+.discount {
+    background-color: #2196f3; 
+}
+
+.happy-hour {
+    background-color: #ff9800; 
+}
+
+.brunch {
+    background-color: #e91e63; 
+}
+
+.loyalty {
+    background-color: #9c27b0; 
+}

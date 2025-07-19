@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table.box1{
+                width: 50%;
+                height: 50%;
+                background-color:rgb(236, 244, 175);
+                padding:50px;
+                border:8px solid rgb(241, 241, 7);
+                margin:40px 20px;
+            }
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image:url('https://files.oaiusercontent.com/file-mX8wTC7DJrgLLcR2bKrPnlbz?se=2024-10-29T06%3A56%3A57Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D1d3bd326-25ce-48dc-aadf-ca282ee25a0a.webp&sig=fkDxyi3BPoUCMGy7zIx1Khbf/YxBac8l1eFo4CzS6/o%3D') ;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #89dff7;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50; 
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049; 
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 3em; 
+            margin: 0;
+            font-family: 'Brush Script MT', cursive; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            border-bottom: 2px solid #e5e86b; 
+            padding-bottom: 10px;
+            background-color: #d1c407; 
+            padding: 20px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            border-radius: 5px; 
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Booking page</title>
+</head>
+<body>
+    <h1 class="heading">___Discover India'S Luxurious Living___ </h1>
+    <h1>___At SENERIA___</h1>
+    <center>
+        <table class="box1">
+            <tr>
+                <td class="buffet"><h3>🍽️ Buffet Breakfast</h3></td>
+                <td class="lunch"><h3>🥗 Lunch Buffet Deal</h3></td>
+                <td class="discount"><h3>💸 Special 25% Discount</h3></td>
+            </tr>
+            <tr>
+                <td class="happy-hour"><h3>🍹 Happy Hour</h3></td>
+                <td class="brunch"><h3>🥂 Weekend Brunch</h3></td>
+                <td class="loyalty"><h3>🎟️ Loyalty Dining Pass</h3></td>
+            </tr>
+        </table>
+    </center>
+    <div class="container">
+        <h1>Room Booking at Hotel Seneria</h1>
+        <form>
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="super-deluxe">Super Deluxe Room</option>
+                <option value="suite">Suite Room</option>
+            </select>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="guests">Number of Persons:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <script>
+        // Set the minimum date for check-in and check-out inputs to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('checkin').setAttribute('min', today);
+        document.getElementById('checkout').setAttribute('min', today);
+    </script>
+</body> 
+</html>
+
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Facilities Table</title>
+    
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Basic styling for the body */
+body {
+    margin: 0;
+    font-family: italic;
+    background-color: #f4f4f4; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container for the menu sections */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+/* Top container for Snacks and Desserts side by side */
+.top-menu-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 20px; /* Space between top sections and bottom */
+}
+
+/* Style for each section (Snacks, Desserts, Main Course, Chinese) */
+.menu-section {
+    width: 48%; /* Each section takes up 48% of the container width */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Title of the sections */
+h2 {
+    color: #333;
+}
+
+/* Dotted vertical separator between Snacks and Desserts */
+.separator {
+    border-left: 2px dotted #ccc;
+    margin: 0 20px;
+}
+
+/* List of items inside each section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+li span {
+    font-weight: bold;
+}
+
+/* Horizontal line between sections */
+hr {
+    border: 0;
+    border-top: 2px dotted #ccc; /* Creates the dotted line */
+    margin: 20px 0;
+}
+.dotted-line {
+    border-left: 2px dotted black; /* Dotted vertical line */
+    height: 200px; /* Height of the line */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
